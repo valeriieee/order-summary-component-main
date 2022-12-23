@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: hsl(225, 100%, 94%); */
+    overflow-y: hidden;
+
+}
+
+p {
+    font-size: 14px;
+}
+
+.flex-container {
+    width: 100%;
+    max-width: 20em;
+    display: flex;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* width: 150px; */
+    flex-direction: column;
+    background-color: hsl(225, 100%, 98%);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    /* gap: 1em */
+
+}
+
+.box-1 {
+    /* width:100%; */
+    display: flex;
+    /* border: 3px solid green; */
+    max-width: 23em;
+    justify-content: center;
+}
+
+.box-1 img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    /* width: 100%;*/
+    /* display: block; */
+    /* object-fit: contain; */
+}
+
+.box-2 {
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    max-width: 75%;
+    font-family: 'Outfit', sans-serif;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0 13px 0;
+
+}
+
+.box-3 {
+    display: flex;
+    background-color: hsl(224, 23%, 55%, 0.1);
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    max-width: 84%;
+    width: 84%;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 9px 15px;
+    /* margin: 2px 0; */
+    /* gap: 5em; */
+    justify-content: space-between;
+}
+
+.box-3-1 {
+    display: flex;
+    /* border: 1px solid red; */
+    /* margin-right: 2em; */
+
+
+}
+
+.box-3-1a {
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-3-1b {
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    gap: 0.4em;
+    padding: 0 5px;
+}
+
+.box-3-2 {
+    display: flex;
+    /* border: 1px solid red; */
+    /* margin-left: 2em; */
+    align-items: center;
+    /* text-decoration: underline; */
+
+}
+
+.box-3-2 a {
+    color: hsl(245, 75%, 52%);
+
+}
+
+.box-3-2 a:hover {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.box-3-1 img {
+    /* width: 30%; */
+    max-width: 70%;
+    /* border-radius: 10px 10px 0 0; */
+
+}
+
+.box-4 {
+    display: flex;
+    /* border: 1px solid red; */
+    max-width: 84%;
+    margin: 10px 0;
+    width: 84%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.box-5 {
+    display: flex;
+    /* border: 1px solid red; */
+    max-width: 90%;
+    margin-top: 11px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.box-5 a {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.box-5 a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+button {
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    /* margin: 10px 0; */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 8px 8px hsl(224, 23%, 55%, 0.5);
+}
+
+button:hover {
+    background-color: hsl(224, 23%, 55%);
+    ;
+}
+
+.background {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    top: 0
+}
+
+.mobilebackground {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (max-width: 375px) {
+    .background {
+        display: none;
+    }
+
+    .mobilebackground {
+        display: block;
+        z-index: -1;
+    }
+
+    body {
+        background-image: url("images\pattern-background-mobile.svg");
+    }
+}
